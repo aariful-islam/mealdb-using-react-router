@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import Meal from '../Meal/Meal';
 import './Restaurent.css'
 
+
+
 const Restaurent = () => {
     const [search,setSearch]= useState('')
     const [meals,setMeals]=useState([])
@@ -17,7 +19,8 @@ const Restaurent = () => {
     
     return (
         <div >
-            <input onChange={Search} type="text" name="" id="" />
+            <h1 style={{textALign:"center",color:"red"}}>Search your food</h1>
+            <input style={{width:"75vh", height:"5vh", textAlign:"center" }} onChange={Search} type="text" name="" id="" />
             <div className='restaurent'>
             {
                 meals.map(meal=> <Meal

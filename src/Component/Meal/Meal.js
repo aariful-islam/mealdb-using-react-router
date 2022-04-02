@@ -6,12 +6,12 @@ import './Meal.css'
 const Meal = (props) => {
     const { strMeal, strMealThumb } = props.meal
     return (
-        <div className='card'>
+        <div className='cards'>
             {/* <h1>{strMeal} {idMeal}</h1> */}
-            <Card  style={{ width: '10rem' }}>
+            <Card>
                 <Card.Img style={{height: '300px'}} src={strMealThumb} />
                 <Card.Body>
-                    <Card.Title>{strMeal}</Card.Title>
+                    <h1>{strMeal}</h1>
                    
                 </Card.Body>
             </Card>
